@@ -1,0 +1,12 @@
+[package]
+name = "backend"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bcrypt = "0.17.1"
+diesel = { version = "2.3.2", features = ["postgres"] }
+dotenv = "0.15.0"
+rocket = { version = "0.5.1", features = ["json"] }
+serde = "1.0.228"
+rand = "0.8.5"
