@@ -47,7 +47,7 @@ pub fn create_note(note: Json<NewRRNote>) -> Json<Message> {
 
     if insert_note.is_ok() {
         Json(Message {
-            message: format!("Note created successfully : {}" , generated_founder_id).to_string(),
+            message: format!("Note created successfully. Your note id : {}" , generated_founder_id).to_string(),
         })
     } else {
         Json(Message {
