@@ -54,10 +54,10 @@ const Read = () => {
         <h1>Read a note</h1>
 
         <label>Note id : </label>
-        <TextField sx={{ width: "300px" }} onChange={(e) => setFoundId(e.target.value)} />
+        <TextField required sx={{ width: "300px" }} onChange={(e) => setFoundId(e.target.value)} />
 
         <label>Access password : </label>
-        <TextField type="password" sx={{ width: "300px" }} onChange={(e) => setAccessPassword(e.target.value)} />
+        <TextField required type="password" sx={{ width: "300px" }} onChange={(e) => setAccessPassword(e.target.value)} />
 
         <Button
           type="submit"

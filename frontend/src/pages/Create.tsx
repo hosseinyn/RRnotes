@@ -54,16 +54,16 @@ const Create = () => {
         <h1>Create a new note</h1>
 
         <label>Creator name : </label>
-        <TextField sx={{ width: "300px" }} onChange={(e) => setCreatorName(e.target.value)} />
+        <TextField required sx={{ width: "300px" }} onChange={(e) => setCreatorName(e.target.value)} />
 
         <label>Note text : </label>
-        <TextField sx={{ width: "300px" }} onChange={(e) => setNoteText(e.target.value)}/>
+        <TextField required sx={{ width: "300px" }} onChange={(e) => setNoteText(e.target.value)}/>
 
         <label>Creator password : </label>
-        <TextField type="password" sx={{ width: "300px" }} onChange={(e) => setCreatorPassword(e.target.value)} />
+        <TextField required type="password" sx={{ width: "300px" }} onChange={(e) => setCreatorPassword(e.target.value)} />
 
         <label>Access password : </label>
-        <TextField type="password" sx={{ width: "300px" }} onChange={(e) => setAccessPassword(e.target.value)} />
+        <TextField required type="password" sx={{ width: "300px" }} onChange={(e) => setAccessPassword(e.target.value)} />
 
         <Button
           type="submit"
